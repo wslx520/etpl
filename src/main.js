@@ -445,7 +445,7 @@
                     ? text.slice(filterCharIndex + 1)
                     : '';
 
-                var variableRawValue = variableName.indexOf('*') === 0;
+                var variableRawValue = variableName.charAt(0) === '*';
                 var variableCode = [
                     variableRawValue ? '' : toStringHead,
                     toGetVariableLiteral(variableName),
